@@ -12,10 +12,6 @@ import com.facebook.appevents.AppEventsLogger;
 
 public class MainActivity extends AppCompatActivity {
 
-//    ImageButton myFbButton;
-//    ImageButton myCalButton;
-//    ImageButton myGroupButton;
-//    ImageButton myListButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,74 +20,41 @@ public class MainActivity extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
 
-        ImageButton myCalButton = (ImageButton) findViewById(R.id.cal_button);
-        ImageButton myFbButton = (ImageButton) findViewById(R.id.fb_button);
-        ImageButton myGroupButton = (ImageButton) findViewById(R.id.group_button);
-        ImageButton myListButton = (ImageButton) findViewById(R.id.list_button);
-        myCalButton.setOnClickListener((View.OnClickListener) this);
-        myGroupButton.setOnClickListener((View.OnClickListener) this);
-        myListButton.setOnClickListener((View.OnClickListener) this);}
-
-    public void onClick(View v) {
-
-        int viedId = v.getId();
-
-        switch(viedId ){
-            case R.id.fb_button:
-                Intent intentLoadFBActivity = new Intent(MainActivity.this, FBActivity.class);
-                startActivity(intentLoadFBActivity);
-                break;
-            case R.id.cal_button:
-                Intent intentLoadCalActivity = new Intent(MainActivity.this, CalActivity.class);
-                startActivity(intentLoadCalActivity);
-                break;
-            case R.id.group_button:
-                //your implementation here
-                break;
-
-        }
-
-
-
-
-
-//        myFbButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intentLoadFBActivity = new Intent(MainActivity.this, FBActivity.class);
-//                startActivity(intentLoadFBActivity);
-//            }
-//        });
-
-
-//        myFbButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intentLoadCalActivity = new Intent(MainActivity.this, CalActivity.class);
-//                startActivity(intentLoadCalActivity);
-//            }
-//        });
-//
-//
-//        myFbButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intentLoadNewActivity = new Intent(MainActivity.this, GroupActivity.class);
-//                startActivity(intentLoadNewActivity);
-//            }
-//        });
-//
-//
-//        myFbButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intentLoadNewActivity = new Intent(MainActivity.this, ListActivity.class);
-//                startActivity(intentLoadNewActivity);
-//            }
-//        });
-
+        defineButtons();
 
     }
+
+    public void defineButtons() {
+        findViewById(R.id.cal_button).setOnClickListener(buttonClickListener);
+        findViewById(R.id.fb_button).setOnClickListener(buttonClickListener);
+        findViewById(R.id.group_button).setOnClickListener(buttonClickListener);
+        findViewById(R.id.list_button).setOnClickListener(buttonClickListener);
+    }
+
+
+    private View.OnClickListener buttonClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.cal_button:
+                    Intent Cal = new Intent(MainActivity.this, CalActivity.class);
+                    startActivity(Cal);
+                    break;
+                case R.id.fb_button:
+                    Intent FB = new Intent(MainActivity.this, FBActivity.class);
+                    startActivity(FB);
+                    break;
+                case R.id.group_button:
+                    Intent Group = new Intent(MainActivity.this, CalActivity.class);
+                    startActivity(Group);
+                    break;
+                case R.id.list_button:
+                    Intent List = new Intent(MainActivity.this, CalActivity.class);
+                    startActivity(List);
+                    break;
+            }
+        }
+    };
 
 
 }
