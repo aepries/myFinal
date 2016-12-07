@@ -43,7 +43,10 @@
             android:name=".CalActivity"
             android:label="@string/title_activity_cal"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".GroupActivity"></activity>
+        <activity android:name=".GroupActivity"
+            >
+
+        </activity>
     </application>
 
 </manifest>

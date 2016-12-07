@@ -77,40 +77,6 @@
         android:layout_alignStart="@+id/thumbnailIcon"
         android:onClick="onClick (MainActivity)" />
 
-    <!--<ImageView-->
-        <!--android:id="@+id/fb_button"-->
-        <!--android:layout_width="100sp"-->
-        <!--android:layout_height="100sp"-->
-        <!--android:background="@drawable/fb"-->
-        <!--android:layout_marginTop="27dp"-->
-        <!--android:layout_marginEnd="14dp"-->
-        <!--android:layout_below="@+id/thumbnailIcon"-->
-        <!--android:layout_toStartOf="@+id/cal_button" />-->
-
-    <!--<ImageView-->
-        <!--android:id="@+id/cal_button"-->
-        <!--android:layout_width="100sp"-->
-        <!--android:layout_height="100sp"-->
-        <!--android:background="@drawable/cal"-->
-        <!--android:layout_alignTop="@+id/fb_button"-->
-        <!--android:layout_alignEnd="@+id/thumbnailIcon" />-->
-
-    <!--<ImageView-->
-        <!--android:id="@+id/group_button"-->
-        <!--android:layout_width="100sp"-->
-        <!--android:layout_height="100sp"-->
-        <!--android:background="@drawable/group"-->
-        <!--android:layout_below="@+id/fb_button"-->
-        <!--android:layout_alignStart="@+id/fb_button"-->
-        <!--android:layout_marginTop="10dp" />-->
-
-    <!--<ImageButton-->
-        <!--android:id="@+id/list_button"-->
-        <!--android:layout_width="100sp"-->
-        <!--android:layout_height="100sp"-->
-        <!--android:background="@drawable/list"-->
-        <!--android:layout_alignTop="@+id/group_button"-->
-        <!--android:layout_alignStart="@+id/cal_button" />-->
 
 
 
