@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void defineButtons() {
-        findViewById(R.id.cal_button).setOnClickListener(buttonClickListener);
         findViewById(R.id.fb_button).setOnClickListener(buttonClickListener);
         findViewById(R.id.group_button).setOnClickListener(buttonClickListener);
         findViewById(R.id.list_button).setOnClickListener(buttonClickListener);
@@ -41,10 +40,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
-                case R.id.cal_button:
-                    Intent Cal = new Intent(MainActivity.this, CalActivity.class);
-                    startActivity(Cal);
-                    break;
                 case R.id.fb_button:
                     Intent FB = new Intent(MainActivity.this, FBActivity.class);
                     startActivity(FB);

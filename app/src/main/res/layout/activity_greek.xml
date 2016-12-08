@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_greek"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aaronpries.myfinal.GreekActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250sp"
+        app:srcCompat="@drawable/party"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="GREEK LIFE"
+        android:layout_width="match_parent"
+        android:layout_height="75sp"
+        android:id="@+id/textView"
+        android:background="#8FFF"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textColor="#000"
+
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="82dp" />
+
+    <TextView
+        android:text="Name:"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignBottom="@+id/editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:background="#e5e7ea"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="John Applseed"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="36dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:background="#e5e7ea"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:hint="partyhard@frat.com"
+        android:layout_above="@+id/button2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:text="Email:"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:background="#e5e7ea"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="(555)-867-5309"
+        android:layout_above="@+id/textView4"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="19dp" />
+
+    <TextView
+        android:text="Phone:"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Submit"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

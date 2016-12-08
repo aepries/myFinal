@@ -9,13 +9,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 
 public class CalActivity extends AppCompatActivity {
 
-    RecyclerView rvItem;
-    CardView cvItem;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,51 +29,16 @@ public class CalActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+        Button submit=(Button) findViewById(R.id.button2);
+        submit.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
             }
-        });
 
-        rvItem = (RecyclerView)findViewById(R.id.rvItem);
-        rvItem.setHasFixedSize(true);
-//        cvItem = (CardView)findViewById(R.id.cvItem);
 
-        LinearLayoutManager manager = new LinearLayoutManager(this);
+    });
 
-        rvItem.setLayoutManager(manager);
 
-        ArrayList<Item> itemList = generatedDummy();
 
-        ItemAdapter adapter = new ItemAdapter(getApplicationContext(), itemList);
 
-        rvItem.setAdapter(adapter);
-    }
 
-    private ArrayList<Item> generatedDummy(){
-        ArrayList<Item> list = new ArrayList<>();
-        for(int i = 0; i<3; i++){
-            Item item = new Item();
-            item.id = i;
-            item.text = "Bizz " + i;
-            item.img = "http://www.hesston.edu/wp-content/uploads/2011/04/hcext_3266.jpg";
-            list.add(item);
-
-            item.id = i;
-            item.text = "Buzz " + i;
-            item.img = "http://www.hesston.edu/wp-content/uploads/2011/04/hcext_3266.jpg";
-            list.add(item);
-
-            item.id = i;
-            item.text = "BizzBuzz " + i;
-            item.img = "http://www.usnews.com/cmsmedia/6e/9c/c3cc022740baa3287a2a1a6c37e2/150824-collegecampus-stock.jpg";
-            list.add(item);
-
-        }
-        return list;
-    }
-
-}
+}}

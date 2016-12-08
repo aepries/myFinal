@@ -34,24 +34,25 @@
     <ImageButton
         android:layout_width="100sp"
         android:layout_height="100sp"
-        app:srcCompat="@drawable/list"
-        android:id="@+id/list_button"
+        app:srcCompat="@drawable/fb"
+        android:id="@+id/fb_button"
         android:scaleType="fitCenter"
-        android:layout_alignTop="@+id/fb_button"
-        android:layout_toEndOf="@+id/fb_button"
+        android:layout_marginTop="37dp"
         android:background="#0000"
-        android:onClick="onClick (MainActivity)" />
+        android:onClick="onClick (MainActivity)"
+        android:layout_below="@+id/thumbnailIcon"
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:layout_width="100sp"
         android:layout_height="100sp"
-        app:srcCompat="@drawable/cal"
-        android:id="@+id/cal_button"
+        app:srcCompat="@drawable/list"
+        android:id="@+id/list_button"
         android:scaleType="fitCenter"
-        android:layout_below="@+id/fb_button"
-        android:layout_alignStart="@+id/fb_button"
         android:background="#0000"
-        />
+        android:onClick="onClick (MainActivity)"
+        android:layout_alignTop="@+id/fb_button"
+        android:layout_toEndOf="@+id/fb_button" />
 
     <ImageButton
     android:layout_width="100sp"
@@ -59,28 +60,9 @@
     app:srcCompat="@drawable/group"
     android:id="@+id/group_button"
     android:scaleType="fitCenter"
-        android:layout_below="@+id/list_button"
-        android:layout_toEndOf="@+id/cal_button"
         android:background="#0000"
-        />
-
-    <ImageButton
-        android:layout_width="100sp"
-        android:layout_height="100sp"
-        app:srcCompat="@drawable/fb"
-        android:id="@+id/fb_button"
-        android:scaleType="fitCenter"
-        android:layout_marginTop="37dp"
-        android:layout_marginStart="11dp"
-        android:background="#0000"
-        android:layout_below="@+id/thumbnailIcon"
-        android:layout_alignStart="@+id/thumbnailIcon"
-        android:onClick="onClick (MainActivity)" />
-
-
-
-
-
+        android:layout_alignTop="@+id/fb_button"
+        android:layout_toStartOf="@+id/fb_button" />
 
 
     <!--<com.facebook.login.widget.LoginButton-->

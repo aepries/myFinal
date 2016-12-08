@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_group"
     android:layout_width="match_parent"
@@ -9,5 +10,184 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.aaronpries.myfinal.GroupActivity">
+
+    <ImageButton
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        app:srcCompat="@drawable/golf"
+        android:id="@+id/btngolf"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"/>
+
+
+    <ImageButton
+        android:layout_height="120sp"
+        app:srcCompat="@drawable/firespin"
+        android:id="@+id/btnfire"
+        android:layout_width="120sp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Golf Club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtgolf"
+        android:layout_below="@id/btngolf"
+        />
+
+    <TextView
+        android:text="Greek Life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsig"
+        android:layout_toEndOf="@+id/btngolf"
+        android:layout_marginStart="24dp"
+        android:id="@+id/txtgreek" />
+
+    <TextView
+        android:text="Farenheit 360"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/txtfire"
+        android:layout_below="@+id/btnfire"
+        android:layout_toStartOf="@+id/btngolf" />
+
+
+    <ImageButton
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/sigma"
+        android:id="@+id/btnsig"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/climb"
+        android:id="@+id/climb"
+        android:layout_below="@+id/txtgreek"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/hack"
+        android:id="@+id/hack"
+        android:layout_below="@+id/txtgolf"
+        android:layout_toEndOf="@+id/beer" />
+
+    <ImageButton
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/beer"
+        android:id="@+id/beer"
+        android:layout_below="@+id/txtfire"
+        android:layout_toStartOf="@+id/btngolf" />
+
+    <TextView
+        android:text="Hackers Club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txthack"
+        android:layout_below="@id/hack"
+        />
+
+    <TextView
+        android:text="Climbing Club"
+        android:textAlignment="center"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/climb"
+        android:layout_toEndOf="@+id/hack"
+        android:id="@+id/txtclimb" />
+
+    <TextView
+        android:text="Beer Club"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtbeer"
+        android:layout_below="@+id/beer"
+        android:layout_alignEnd="@+id/txtfire"
+        android:layout_alignStart="@+id/txtfire" />
+
+    <ImageButton
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/quid"
+        android:id="@+id/quid"
+        android:layout_below="@+id/txtclimb"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/cook"
+        android:id="@+id/cook"
+        android:layout_below="@+id/txthack"
+        android:layout_toEndOf="@+id/beer" />
+
+    <ImageButton
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/hip"
+        android:id="@+id/hip"
+        android:layout_below="@+id/txtbeer"
+        android:layout_toStartOf="@+id/btngolf" />
+
+    <TextView
+        android:text="Cooking Club"
+        android:textAlignment="center"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txthip"
+        android:layout_below="@id/cook"
+        />
+
+    <TextView
+        android:text="Quidditch"
+        android:textAlignment="center"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quid"
+        android:layout_toEndOf="@+id/hack"
+        android:id="@+id/quidd" />
+
+    <TextView
+        android:text="Hip Hop Club"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txthipp"
+        android:layout_below="@+id/hip"
+        android:layout_alignEnd="@+id/txtfire"
+        android:layout_alignStart="@+id/txtfire" />
+
+
+
 
 </RelativeLayout>

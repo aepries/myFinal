@@ -12,7 +12,7 @@ public class Item implements Serializable{
 
     public String text;
 
-    public String img;
+    public int imgID;
 
 
 }
